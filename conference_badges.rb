@@ -6,7 +6,10 @@ end
 
 def batch_badge_creator(array)
   # array.map! {|item| badge_maker(item)}
-  array.map {|badge| "Hello, my name is #{badge}."}
+  array.each do |item|
+    puts badge_maker(item)
+  end
+  #array.map {|badge| "Hello, my name is #{badge}."}
 end
 
 def assign_rooms(array)
